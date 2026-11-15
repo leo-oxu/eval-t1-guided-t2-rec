@@ -138,7 +138,7 @@ Compute, data split and model size come first, because they limit everything els
 | Compute (we have no GPU of our own) | Course or U of T cluster; Colab Pro; Kaggle | Google Colab (no school GPU available); Kaggle as backup. Save checkpoints to Drive every epoch | Agreed |
 | Data split | TGVN's released M4Raw split; our own split of the validation set | Use TGVN's public split, so numbers are comparable | Agreed |
 | Motion-corrupted subjects | Include; exclude; robustness test only | Exclude from main results | Agreed |
-| Acceleration factors and ACS | Which R values; centre width | R = 4, 6, 8 (+10); fixed ACS of about 8% (16 lines); report net R | Agreed |
+| Acceleration factors and ACS | Which R values; centre width | R = 4, 6, 8 (+10), where R is the true net acceleration (fastMRI-style: total sampled lines = 195 acquired / R, ACS included); fixed ACS of 12 lines. Decided 14 Nov: with 16 ACS lines on top of every R-th line, net R only reached 3.2–5.7 | Decided |
 | Mask type | Equispaced; random; both | Equispaced as main; random as second, with fixed seeds | Agreed |
 | Which repetitions form the target | Average of all 3; average of the other two | Input = repetition k, target = mean of the other two; rotate k for 3× data | Agreed |
 | Averaging domain | Magnitude RSS (M4Raw default); complex | Complex if repetitions are phase-stable, otherwise magnitude (stated in report) | Agreed |

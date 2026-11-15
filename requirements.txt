@@ -1,0 +1,5 @@
+# Colab already ships numpy, scipy, pandas, matplotlib, h5py, scikit-image,
+# torch and cupy. Only the extras are listed here.
+sigpy>=0.1.26
+h5py
+scikit-image
